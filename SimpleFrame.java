@@ -1,4 +1,5 @@
 import java.awt.Toolkit;
+import java.awt.Image;
 import javax.swing.*;
 class SimpleFrame extends JFrame{
     private static final int DEFAULT_WIDTH =500;
@@ -6,7 +7,15 @@ class SimpleFrame extends JFrame{
     SimpleFrame(){
         // setSize(DEFAULT_WIDTH,DEFAULT_HEIGHT);
         // setLocation(200,200);
-        setBounds(500,200,DEFAULT_WIDTH,DEFAULT_HEIGHT);
+        
+        // frame.setLocation(200,200);
+        // frame.setBounds(x,y,width,height);
+       setBounds(500,200,DEFAULT_WIDTH,DEFAULT_HEIGHT);
+        setTitle("Rojina");
+        setResizable(false);
+        ImageIcon imgicon = new ImageIcon("C:/Users/chhet/OneDrive/Pictures/javaa.png");
+        Image img  = imgicon.getImage();
+        setIconImage(img);
 
     }
     
